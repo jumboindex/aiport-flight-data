@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aiport-flight-data/static/css/main.7116b23e.css",
+    "main.js": "/aiport-flight-data/static/js/main.eeea6202.js",
+    "index.html": "/aiport-flight-data/index.html",
+    "main.7116b23e.css.map": "/aiport-flight-data/static/css/main.7116b23e.css.map",
+    "main.eeea6202.js.map": "/aiport-flight-data/static/js/main.eeea6202.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7116b23e.css",
+    "static/js/main.eeea6202.js"
+  ]
+}
