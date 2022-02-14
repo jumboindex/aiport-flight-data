@@ -14,7 +14,7 @@ const options = {
           const response = await fetch(`${apiEndPoint}/arrivals`, options);
           if (response.ok) {
               const jsonResponse = await response.json()
-              return jsonResponse;
+              return jsonResponse.collection.items;
           }
           throw new Error('Arrival request failed' + response.statusText);
       } catch (err) {   
@@ -29,7 +29,7 @@ const options = {
         const response = await fetch(`${apiEndPoint}/departures`, options);
         if (response.ok) {
             const jsonResponse = await response.json()
-            return jsonResponse;
+            return jsonResponse.collection.items;
         }
         throw new Error('Arrival request failed' + response.statusText);
     } catch (err) {   

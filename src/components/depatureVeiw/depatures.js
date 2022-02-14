@@ -1,6 +1,7 @@
 import react, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAirportDepatures, selectDepatures, selectDepaturesError, selectDepaturesLoading } from "../../features/depaturesSlice";
+import Container from "../Container/Container";
 
 const Departures = () => {
 
@@ -18,6 +19,11 @@ const Departures = () => {
 
     return (
         <div>
+            <Container  title={'Depatures'}
+                        data={depatureData}
+                        loading={loading}
+                        error={error}
+            />
         </div>
     )
 }

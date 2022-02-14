@@ -1,6 +1,7 @@
 import react, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAirportArrivals, selectArrivals, selectArrivalsError, selectArrivalsLoading } from "../../features/arrivalsSlice";
+import Container from "../Container/Container";
 
 const Arrivals = () => {
 
@@ -16,8 +17,10 @@ const Arrivals = () => {
 
     console.log(arrivalData)
     return (
-        <div>
-        </div>
+        <Container  title={'Arrivals'}
+                    data={arrivalData} 
+                    loading={loading}
+                    error={error} />
     )
 }
 
