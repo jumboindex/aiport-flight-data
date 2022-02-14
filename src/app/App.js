@@ -2,7 +2,7 @@ import Arrivals from '../components/arrivalView/arrivals';
 import Departures from '../components/depatureVeiw/depatures';
 import { Provider } from 'react-redux';
 import store from './store';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

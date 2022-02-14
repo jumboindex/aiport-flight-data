@@ -1,0 +1,10 @@
+.badge {
+    width: 100%;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
