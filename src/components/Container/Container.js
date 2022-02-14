@@ -1,4 +1,5 @@
 import React from "react";
+import TableView from "../table/Table";
 
 const Container = ({ title, data, loading, error}) => {
 
@@ -9,7 +10,11 @@ const Container = ({ title, data, loading, error}) => {
             {data.map((item, index) => {
                return ( 
                 <div key={index}> 
-                       {item.data[0].value.date}   
+                       {item.data[0].value.date}
+                       <TableView 
+                        data={item.data[0].value.events}
+                        title={title}
+                       />   
                 </div> )
                           
             })}
